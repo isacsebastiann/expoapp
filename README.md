@@ -22,27 +22,26 @@
 ## Conclusión
 Estos cambios siguen las mejores prácticas en el desarrollo con React y React Native, enfocándose en la modularidad, claridad y mantenibilidad del código.
 
-## Problemas de Rendimiento y Mantenibilidad en la Aplicación Original
+**1. Problemas específicos de rendimiento o mantenibilidad en la aplicación original:**
 
-- La aplicación original presentaba el problema de tener todo el código, estilos e imágenes en un solo archivo, lo que resultaba en un código poco legible y difícil de mantener.
+   - La aplicación original tenía todo el código, estilos e imágenes en un solo archivo, lo que dificultaba la legibilidad y mantenibilidad del código.
 
-## Asegurando la Integridad de la Funcionalidad Existente
+**2. Cómo se aseguró que el refactoring no afectara negativamente la funcionalidad existente:**
 
-- Para garantizar que el proceso de refactoring no afectara negativamente la funcionalidad existente, se aseguró de importar correctamente todos los archivos necesarios en las rutas, incluyendo estilos e imágenes.
+   - Se aseguró importar correctamente los archivos necesarios en las rutas, incluyendo estilos e imágenes, para garantizar que la funcionalidad existente no se viera afectada.
 
-## Mejoras Logradas con el Refactoring
+**3. Mejoras de rendimiento y mantenibilidad logradas con el refactoring:**
 
-- El proceso de refactoring resultó en una mayor organización y orden en el código, además de la implementación de mejores prácticas de desarrollo.
+   - Se logró una mayor organización y orden en el código, además de la implementación de mejores prácticas de desarrollo.
 
-## Desafíos y Cómo se Superaron
+**4. Desafíos más significativos durante el proceso de refactoring y cómo se superaron:**
 
-- Uno de los desafíos más significativos durante el refactoring fue la correcta importación de rutas y la resolución de problemas relacionados con archivos faltantes. Estos desafíos se superaron mediante pruebas exhaustivas y verificación de las rutas y nombres de archivo.
+   - Uno de los desafíos significativos fue importar correctamente las rutas y resolver problemas de archivos faltantes. Esto se superó mediante pruebas exhaustivas y verificando las rutas y nombres de archivo.
 
-## Impacto en la Experiencia del Usuario Final
+**5. Impacto del refactoring en la experiencia del usuario final:**
 
-- La experiencia del usuario final mejoró notablemente gracias a la mayor legibilidad y al uso de mejores prácticas en el código.
+   - La experiencia del usuario final mejoró significativamente debido a la mayor legibilidad y el uso de mejores prácticas en el código.
 
-## Lecciones para Futuros Proyectos de Desarrollo y Refactoring
+**6. Aplicación de lecciones aprendidas en futuros proyectos de desarrollo y refactoring:**
 
-- Para proyectos futuros, se recomienda establecer una estructura organizada desde el principio, lo que proporcionará una base sólida y facilitará la importación de componentes y archivos, evitando problemas similares en el futuro.
-
+   - En futuros proyectos, se pueden aplicar las lecciones aprendidas al establecer una estructura ordenada desde el principio. Esto proporcionará una base sólida y facilitará la importación de componentes y archivos, evitando problemas similares en el futuro.
