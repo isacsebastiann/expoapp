@@ -34,14 +34,14 @@ const styles = StyleSheet.create({
   buttonContainer: {
     marginHorizontal: 20,
     marginBottom: 12,
-    elevation: 3,
+    elevation: 4, // Aumenta la elevación para un efecto más pronunciado
     borderRadius: 20,
     overflow: 'hidden',
   },
   button: {
-    backgroundColor: '#007bff', // A pleasant blue shade
+    backgroundColor: '#007bff',
     paddingHorizontal: 20,
-    paddingVertical: 15,
+    paddingVertical: 12, // Ajuste ligero en el padding vertical
     borderRadius: 20,
     width: '100%',
     flexDirection: 'row',
@@ -50,13 +50,13 @@ const styles = StyleSheet.create({
     shadowColor: '#000',
     shadowOffset: {
       width: 0,
-      height: 2,
+      height: 3,
     },
-    shadowOpacity: 0.25,
-    shadowRadius: 3.84,
+    shadowOpacity: 0.3, // Ajuste ligero en la opacidad
+    shadowRadius: 4,   // Aumento en el radio
   },
   buttonIcon: {
-    paddingRight: 10,
+    paddingRight: 8, // Ajuste en el espacio entre icono y texto
   },
   buttonLabel: {
     color: '#fff',
