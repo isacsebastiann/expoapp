@@ -1,5 +1,6 @@
-import { Pressable, StyleSheet, Text } from 'react-native';
+import { Pressable, Text } from 'react-native';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
+import styles from './IconButton.styles';
 
 export default function IconButton({ icon, label, onPress }) {
   return (
@@ -9,14 +10,3 @@ export default function IconButton({ icon, label, onPress }) {
     </Pressable>
   );
 }
-
-const styles = StyleSheet.create({
-  iconButton: {
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  iconButtonLabel: {
-    color: '#fff',
-    marginTop: 12,
-  },
-});

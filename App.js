@@ -1,17 +1,19 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { StyleSheet, View, Alert, Platform } from "react-native";
+import { View, Alert, Platform } from "react-native";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
-import Button from './components/Button';
+import Button from './components/Buttons/Button.js';
 import ImageViewer from './components/ImageViewer';
 import * as ImagePicker from 'expo-image-picker';
-import CircleButton from './components/CircleButton';
-import IconButton from './components/IconButton';
-import EmojiPicker from "./components/EmojiPicker";
-import EmojiList from './components/EmojiList';
-import EmojiSticker from './components/EmojiSticker';
+import CircleButton from './components/Buttons/CircleButton.js';
+import IconButton from './components/Buttons/IconButton.js';
+import EmojiPicker from "./components/EmojiActions/EmojiPicker.js";
+import EmojiList from './components/EmojiActions/EmojiList.js';
+import EmojiSticker from './components/EmojiActions/EmojiSticker.js';
 import { captureRef } from 'react-native-view-shot';
 import * as MediaLibrary from 'expo-media-library';
 import { StatusBar } from 'expo-status-bar';
+import styles from './styles/App.styles';
+
 
 
 import domtoimage from 'dom-to-image';
@@ -68,7 +70,7 @@ export default function App() {
         Alert.alert("Error", "Failed to save the image.");
       }
     } else {
-      // Código específico para la web
+      // código para la web
       try {
         const dataUrl = await domtoimage.toJpeg(imageRef.current, {
           quality: 0.95,
@@ -76,7 +78,7 @@ export default function App() {
           height: 440,
         });
 
-        // Crear y disparar un evento de descarga para el navegador
+        //  evento de descarga para el navegador
         const link = document.createElement('a');
         link.download = 'captured-image.jpeg';
         link.href = dataUrl;
@@ -128,32 +130,3 @@ export default function App() {
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#333',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  imageContainer: {
-    flex: 1,
-    width: '100%',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  footerContainer: {
-    width: '100%',
-    alignItems: 'center',
-    padding: 20,
-  },
-  optionsContainer: {
-    position: 'absolute',
-    bottom: 80,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  optionsRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
-});

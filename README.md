@@ -1,6 +1,17 @@
-# Refactorización de Código en React Native
+# Resumen de Cambios Final 
+# Refactorización del Proyecto React Native
 
-## Resumen de Cambios
+Se realizaron múltiples mejoras en la estructura y funcionalidad del proyecto para incrementar su claridad, mantenibilidad y escalabilidad:
+
+## Componentes Reutilizables
+
+- **Ubicación**: `components/Buttons/`
+- **Estructura**: components/
+├── Button/
+│ ├── Button.js
+│ └── Button.styles.js
+
+- Cambios Aplicados en cada uno de los botones, se organizaron en carpetas y se agrego un archivo style unico de donde se importan los estilos
 
 ### Cambios Generales
 - **Separación de Estilos:** Los estilos ahora están en archivos separados, mejorando la organización y mantenibilidad.
@@ -18,6 +29,24 @@
 - **Separación de Estilos:** Estilos del botón movidos a `buttonStyles.js`.
 - **PropTypes:** Añadido PropTypes para `label`.
 - **Función `handlePress`:** Simplificada para mejorar legibilidad.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Conclusión
 Estos cambios siguen las mejores prácticas en el desarrollo con React y React Native, enfocándose en la modularidad, claridad y mantenibilidad del código.
