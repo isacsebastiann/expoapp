@@ -3,6 +3,14 @@
 
 Se realizaron múltiples mejoras en la estructura y funcionalidad del proyecto para incrementar su claridad, mantenibilidad y escalabilidad:
 
+## Resumen General de los cambios 
+
+ - Primero, organicé los componentes reutilizables, como botones, en una carpeta components/button, separando la lógica de los estilos. - Luego, centralicé las llamadas a APIs en una carpeta services/, facilitando su mantenimiento. 
+ - Para manejar la selección y el guardado de imágenes, implementé los hooks useImagePicker y saveImage, reemplazando el uso directo de ImagePicker y MediaLibrary. 
+ - También moví los estilos específicos a App.styles.js, lo que mejoró la organización y permitió su reutilización. 
+ - Finalmente, optimicé el manejo de estados y efectos con useState y useEffect, lo que contribuyó a la modularidad y claridad del código.
+
+
 ## Componentes Reutilizables
 
 - **Ubicación**: `components/Buttons/`
@@ -30,23 +38,10 @@ Se realizaron múltiples mejoras en la estructura y funcionalidad del proyecto p
 - **PropTypes:** Añadido PropTypes para `label`.
 - **Función `handlePress`:** Simplificada para mejorar legibilidad.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#### Creadas carpetas de hooks, services, styles 
+- Los hooks personalizados mepermiten reutilizar lógica de estado y efectos entre componentes. 
+- Los services agrupan funciones que interactúan con APIs o realizan tareas específicas, como manejo de datos. 
+- Las styles contienen estilos comunes y específicos de la aplicación, facilitando su mantenimiento y reutilización.
 
 ## Conclusión
 Estos cambios siguen las mejores prácticas en el desarrollo con React y React Native, enfocándose en la modularidad, claridad y mantenibilidad del código.
@@ -57,7 +52,7 @@ Estos cambios siguen las mejores prácticas en el desarrollo con React y React N
 
 **2. Cómo se aseguró que el refactoring no afectara negativamente la funcionalidad existente:**
 
-   - Se aseguró importar correctamente los archivos necesarios en las rutas, incluyendo estilos e imágenes, para garantizar que la funcionalidad existente no se viera afectada.
+   - Me asegure importar correctamente los archivos necesarios en las rutas, incluyendo estilos e imágenes, para garantizar que la funcionalidad existente no se viera afectada.
 
 **3. Mejoras de rendimiento y mantenibilidad logradas con el refactoring:**
 
@@ -69,8 +64,10 @@ Estos cambios siguen las mejores prácticas en el desarrollo con React y React N
 
 **5. Impacto del refactoring en la experiencia del usuario final:**
 
-   - La experiencia del usuario final mejoró significativamente debido a la mayor legibilidad y el uso de mejores prácticas en el código.
+   - La experiencia del usuario final mejoró significativamente debido a la mayor legibilidad y el uso de mejores prácticas en el código, esto en cuanto a el codigo, puedo decir que un usuario que usa la aplicacion los cambios que puede notar son que va mas rapido.
 
 **6. Aplicación de lecciones aprendidas en futuros proyectos de desarrollo y refactoring:**
 
-   - En futuros proyectos, se pueden aplicar las lecciones aprendidas al establecer una estructura ordenada desde el principio. Esto proporcionará una base sólida y facilitará la importación de componentes y archivos, evitando problemas similares en el futuro.
+   - En futuros proyectos, puedo aplicar las lecciones aprendidas al establecer una estructura ordenada desde el principio. Esto me da una base sólida y facilita la importación de componentes y archivos, evitando problemas similares en el futuro.
+   - Me parece muy importante tambien que aprendi a programar de forma ordenada aplicando bases que permiten no solo escribir codigo 
+   si no escribir un codigo legible, mantenible y organizado para trabajar en equipo sirve mucho. 
